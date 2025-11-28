@@ -10,7 +10,7 @@ const features = [
   {
     icon: Globe,
     title: "Интеграция с каналами",
-    description: "Booking.com, Airbnb, Avito и другие площадки синхронизируются в реальном времени."
+    description: "Циан, Booking.com, Airbnb, Avito и другие площадки синхронизируются в реальном времени."
   },
   {
     icon: BarChart3,
