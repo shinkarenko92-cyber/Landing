@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-
 export const CTA = () => {
-  return (
-    <section className="py-24 gradient-subtle">
+  return <section className="py-24 gradient-subtle">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center animate-fade-in">
           <div className="gradient-hero rounded-3xl p-12 md:p-16 shadow-2xl relative overflow-hidden">
@@ -12,24 +10,13 @@ export const CTA = () => {
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
                 Готовы увеличить доход от апартаментов?
               </h2>
-              <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-                Присоединяйтесь к 500+ владельцам апартаментов, которые уже автоматизировали 
-                свой бизнес с Roomi
-              </p>
+              <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">Присоединяйтесь к счастливым владельцам апартаментов, которые уже автоматизировали свой бизнес с Roomi</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button 
-                  variant="accent" 
-                  size="lg" 
-                  className="text-lg px-8 py-6 h-auto bg-white text-primary hover:bg-white/90"
-                >
+                <Button variant="accent" size="lg" className="text-lg px-8 py-6 h-auto bg-white text-primary hover:bg-white/90">
                   Начать бесплатно
                   <ArrowRight className="ml-2" />
                 </Button>
-                <Button 
-                  variant="outline" 
-                  size="lg" 
-                  className="text-lg px-8 py-6 h-auto border-white text-white hover:bg-white/10"
-                >
+                <Button variant="outline" size="lg" className="text-lg px-8 py-6 h-auto border-white text-white hover:bg-white/10">
                   Связаться с нами
                 </Button>
               </div>
@@ -40,6 +27,5 @@ export const CTA = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };

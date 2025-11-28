@@ -1,8 +1,6 @@
 import { Building2 } from "lucide-react";
-
 export const Footer = () => {
-  return (
-    <footer className="bg-card border-t border-border py-12">
+  return <footer className="bg-card border-t border-border py-12">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
@@ -49,15 +47,12 @@ export const Footer = () => {
         </div>
 
         <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-muted-foreground">
-            © 2024 Roomi. Все права защищены.
-          </p>
+          <p className="text-sm text-muted-foreground">© 2025 Roomi. Все права защищены.</p>
           <div className="flex gap-6 text-sm text-muted-foreground">
             <a href="#" className="hover:text-foreground transition-colors">Политика конфиденциальности</a>
             <a href="#" className="hover:text-foreground transition-colors">Условия использования</a>
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
