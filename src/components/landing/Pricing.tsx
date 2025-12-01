@@ -105,8 +105,15 @@ export const Pricing = () => {
                 variant={plan.popular ? "hero" : "outline"} 
                 className="w-full"
                 size="lg"
+                asChild={plan.name !== "Enterprise"}
               >
-                {plan.name === "Enterprise" ? "Связаться" : "Начать"}
+                {plan.name === "Enterprise" ? (
+                  "Связаться"
+                ) : (
+                  <a href="https://app.roomi.pro" target="_blank" rel="noopener noreferrer">
+                    Начать
+                  </a>
+                )}
               </Button>
             </Card>
           ))}

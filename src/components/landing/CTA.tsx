@@ -12,9 +12,11 @@ export const CTA = () => {
               </h2>
               <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">Присоединяйтесь к счастливым владельцам апартаментов, которые уже автоматизировали свой бизнес с Roomi</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button variant="accent" size="lg" className="text-lg px-8 py-6 h-auto bg-white text-primary hover:bg-white/90">
-                  Начать бесплатно
-                  <ArrowRight className="ml-2" />
+                <Button variant="accent" size="lg" className="text-lg px-8 py-6 h-auto bg-white text-primary hover:bg-white/90" asChild>
+                  <a href="https://app.roomi.pro" target="_blank" rel="noopener noreferrer">
+                    Начать бесплатно
+                    <ArrowRight className="ml-2" />
+                  </a>
                 </Button>
                 <Button variant="outline" size="lg" className="text-lg px-8 py-6 h-auto border-white text-white hover:bg-white/10">
                   Связаться с нами
