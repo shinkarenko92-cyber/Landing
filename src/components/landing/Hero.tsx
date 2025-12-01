@@ -19,9 +19,11 @@ export const Hero = () => {
               помогает увеличить доход от апартаментов до 40%
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button variant="hero" size="lg" className="text-lg px-8 py-6 h-auto">
-                Начать бесплатно
-                <ArrowRight className="ml-2" />
+              <Button variant="hero" size="lg" className="text-lg px-8 py-6 h-auto" asChild>
+                <a href="https://app.roomi.pro" target="_blank" rel="noopener noreferrer">
+                  Начать бесплатно
+                  <ArrowRight className="ml-2" />
+                </a>
               </Button>
               <Button variant="outline" size="lg" className="text-lg px-8 py-6 h-auto">
                 <Play className="mr-2" />
