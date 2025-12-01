@@ -1,5 +1,12 @@
 import { Calendar, BarChart3, Zap, Shield, Globe, Clock } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const features = [
   {
@@ -47,7 +54,8 @@ export const Features = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        {/* Desktop Grid */}
+        <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {features.map((feature, index) => (
             <Card 
               key={index}
@@ -63,6 +71,31 @@ export const Features = () => {
               </p>
             </Card>
           ))}
+        </div>
+
+        {/* Mobile Carousel */}
+        <div className="md:hidden max-w-sm mx-auto">
+          <Carousel className="w-full">
+            <CarouselContent>
+              {features.map((feature, index) => (
+                <CarouselItem key={index}>
+                  <Card className="p-8 border-border/50">
+                    <div className="w-12 h-12 rounded-lg gradient-hero flex items-center justify-center mb-4">
+                      <feature.icon className="w-6 h-6 text-white" />
+                    </div>
+                    <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed">
+                      {feature.description}
+                    </p>
+                  </Card>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <div className="flex justify-center gap-2 mt-4">
+              <CarouselPrevious className="static translate-y-0" />
+              <CarouselNext className="static translate-y-0" />
+            </div>
+          </Carousel>
         </div>
       </div>
     </section>

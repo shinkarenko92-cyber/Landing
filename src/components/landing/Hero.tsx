@@ -5,7 +5,7 @@ import heroDashboard from "@/assets/hero-dashboard.jpg";
 export const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden gradient-subtle">
-      <div className="container mx-auto px-4 py-20 relative z-10">
+      <div className="container mx-auto px-6 md:px-4 py-32 md:py-20 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 animate-fade-in">
             <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full mb-6 font-medium text-sm">
