@@ -47,7 +47,11 @@ export const Footer = () => {
         </div>
 
         <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-muted-foreground">© 2025 Roomi. Все права защищены.</p>
+          <div className="flex flex-col md:flex-row items-center gap-2 md:gap-6 text-sm text-muted-foreground">
+            <p>© 2025 Roomi. Все права защищены.</p>
+            <p>Владелец: Шинкаренко Владимир Юрьевич</p>
+            <p>ИНН 772831845861</p>
+          </div>
           <div className="flex gap-6 text-sm text-muted-foreground">
             <a href="#" className="hover:text-foreground transition-colors">Политика конфиденциальности</a>
             <a href="#" className="hover:text-foreground transition-colors">Условия использования</a>
